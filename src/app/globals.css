@@ -1,26 +1,131 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Nipah Dark Theme Colors */
+  --bg: #090a0c;
+  --surface: #121315;
+  --surface-2: #16181c;
+  --surface-3: #1d2024;
+  --text: #f3efe8;
+  --text-dim: #8a8a8a;
+  --text-soft: #a0a0a0;
+  --gold: #d7a35a;
+  --gold-strong: #efbf7a;
+  --gold-light: #f5d4a0;
+  --danger: #c66767;
+  --success: #7dbd92;
+  --line-soft: #2a2d31;
+  --chip-bg: #1a1c1f;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-text: var(--text);
+  --color-text-dim: var(--text-dim);
+  --color-text-soft: var(--text-soft);
+  --color-gold: var(--gold);
+  --color-gold-strong: var(--gold-strong);
+  --color-gold-light: var(--gold-light);
+  --color-danger: var(--danger);
+  --color-success: var(--success);
+  --color-line-soft: var(--line-soft);
+  --color-chip-bg: var(--chip-bg);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-plus-jakarta);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .gold-gradient {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-strong) 100%);
+  }
+  
+  .gold-gradient-text {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .glass {
+    background: rgba(18, 19, 21, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--line-soft);
+  }
+  
+  .card-hover {
+    @apply transition-all duration-200;
+  }
+  
+  .card-hover:hover {
+    @apply border-gold/30 shadow-[0_0_30px_rgba(215,163,90,0.1)];
+    transform: translateY(-2px);
+  }
+  
+  .btn-gold {
+    @apply bg-gold text-bg font-semibold px-6 py-3 rounded-none transition-all duration-200;
+  }
+  
+  .btn-gold:hover {
+    @apply bg-gold-strong shadow-[0_0_20px_rgba(215,163,90,0.3)];
+    transform: scale(1.02);
+  }
+  
+  .btn-outline {
+    @apply border-gold text-gold bg-transparent font-semibold px-6 py-3 rounded-none transition-all duration-200;
+  }
+  
+  .btn-outline:hover {
+    @apply bg-gold text-bg shadow-[0_0_20px_rgba(215,163,90,0.2)];
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold to-gold-light;
+  }
+  
+  .shimmer {
+    @apply relative overflow-hidden bg-surface-2;
+  }
+  
+  .shimmer::after {
+    @apply absolute inset-0 -translate-x-full animate-[shimmer_1.5s_infinite];
+    background: linear-gradient(90deg, transparent, rgba(215,163,90,0.1), transparent);
+    content: "";
+  }
+  
+  @keyframes shimmer {
+    100% { transform: translateX(100%); }
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(215,163,90,0.3); }
+  50% { box-shadow: 0 0 40px rgba(215,163,90,0.5); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
 }
