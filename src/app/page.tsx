@@ -20,12 +20,6 @@ export default function Home() {
               playsInline
               className="w-full h-full object-contain animate-float"
             />
-            {/* Fallback static logo */}
-            <div className="absolute inset-0 flex items-center justify-center w-20 h-20 mx-auto rounded-xl gold-gradient animate-float shadow-[0_0_40px_rgba(215,163,90,0.3)]">
-              <svg className="w-10 h-10 text-bg" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
-              </svg>
-            </div>
           </div>
           
           <h1 className="mt-8 text-5xl md:text-7xl font-extrabold tracking-tight bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent animate-float">
