@@ -28,7 +28,7 @@ export default function Home() {
           {/* Download Buttons */}
           <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6 flex-wrap">
             <Link 
-              href="https://github.com/keiz7en/LimeSugar/releases/download/v5.1.4/app-release.apk"
+              href="https://github.com/keiz7en/LimeSugar/releases/download/v0.1.0/app-release.apk"
               className="btn-gold group flex items-center justify-center gap-3 px-8 py-4 min-w-[200px]"
               target="_blank"
               rel="noopener noreferrer"
@@ -41,7 +41,7 @@ export default function Home() {
             </Link>
             
             <Link 
-              href="https://github.com/keiz7en/LimeSugar/releases/download/v5.1.4/limesugar-windows.zip"
+              href="https://github.com/keiz7en/LimeSugar/releases/download/v0.1.0/limesugar-windows.zip"
               className="btn-outline group flex items-center justify-center gap-3 px-8 py-4 min-w-[200px]"
               target="_blank"
               rel="noopener noreferrer"
@@ -54,7 +54,7 @@ export default function Home() {
             </Link>
             
             <Link 
-              href="https://github.com/keiz7en/LimeSugar/releases/download/v5.1.4/limesugar-linux.tar.gz"
+              href="https://github.com/keiz7en/LimeSugar/releases/download/v0.1.0/limesugar-linux.tar.gz"
               className="btn-outline group flex items-center justify-center gap-3 px-8 py-4 min-w-[200px]"
               target="_blank"
               rel="noopener noreferrer"
@@ -70,7 +70,7 @@ export default function Home() {
           {/* Version badge */}
           <div className="mt-10 inline-flex items-center gap-3 px-4 py-2 glass rounded-lg">
             <span className="text-sm text-text-dim">Latest Release</span>
-            <span className="px-3 py-1 text-sm font-semibold gold-gradient-text">v5.1.4</span>
+            <span className="px-3 py-1 text-sm font-semibold gold-gradient-text">v0.1.0</span>
             <span className="text-xs text-text-dim">Resume Fix · Aug 2026</span>
           </div>
         </div>
@@ -194,7 +194,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link 
-              href="https://github.com/keiz7en/LimeSugar/releases/download/v5.1.4/app-release.apk"
+              href="https://github.com/keiz7en/LimeSugar/releases/download/v0.1.0/app-release.apk"
               className="btn-gold px-10 py-4 text-lg"
               target="_blank"
               rel="noopener noreferrer"
