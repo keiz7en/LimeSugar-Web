@@ -1,7 +1,7 @@
-:HL["/LimeSugar-Web/_next/static/chunks/1hd2fk0wof9kh.css","style"]
+:HL["/LimeSugar-Web/_next/static/chunks/277h0fz7vj3zv.css","style"]
 :HL["/LimeSugar-Web/_next/static/media/83afe278b6a6bb3c-s.p.2bn3s6zvc0dyp.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/LimeSugar-Web/_next/static/media/fba5a26ea33df6a3-s.p.18rizl4rsrl42.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/screenshot1.jpg","image"]
 :HL["/screenshot2.jpg","image"]
 :HL["/screenshot3.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"5xJV46HFlDdumGpk3I59q"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"iIRxiT157Nd1g-i7ohXsE"}
