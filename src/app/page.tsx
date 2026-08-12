@@ -46,6 +46,19 @@ export default function Home() {
             </Link>
             
             <Link 
+              href="https://github.com/keiz7en/LimeSugar/releases/download/v0.1.1/LimeSugar-v0.1.1-windows.zip"
+              className="btn-outline group flex items-center justify-center gap-3 px-8 py-4 min-w-[220px]"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg className="w-5 h-5 transition-transform group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21 13V3c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h6v-2H5V3h14v10h-2zm-4 2h-2v-2h-2v2H9v-2H7v2H5c-1.1 0-2 .9-2 2v4h14v-4c0-1.1-.9-2-2-2z"/>
+              </svg>
+              <span className="text-lg font-semibold">Download for Windows</span>
+              <span className="text-sm opacity-80">32 MB · ZIP</span>
+            </Link>
+            
+            <Link 
               href="https://github.com/keiz7en/LimeSugar/releases/tag/v0.1.1"
               className="btn-outline group flex items-center justify-center gap-3 px-8 py-4 min-w-[220px]"
               target="_blank"
@@ -54,8 +67,8 @@ export default function Home() {
               <svg className="w-5 h-5 transition-transform group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h10v2H4z"/>
               </svg>
-              <span className="text-lg font-semibold">All APK Variants</span>
-              <span className="text-sm opacity-80">arm64 · x86_64 · more</span>
+              <span className="text-lg font-semibold">All Downloads</span>
+              <span className="text-sm opacity-80">APK · ZIP</span>
             </Link>
           </div>
 
@@ -66,6 +79,7 @@ export default function Home() {
               { n: "armeabi-v7a", s: "16.6 MB", h: "https://github.com/keiz7en/LimeSugar/releases/download/v0.1.1/LimeSugar-v0.1.1-armeabi-v7a.apk" },
               { n: "x86_64 · emulator", s: "20.4 MB", h: "https://github.com/keiz7en/LimeSugar/releases/download/v0.1.1/LimeSugar-v0.1.1-x86_64.apk" },
               { n: "universal", s: "65.6 MB", h: "https://github.com/keiz7en/LimeSugar/releases/download/v0.1.1/LimeSugar-v0.1.1-universal.apk" },
+              { n: "Windows", s: "32 MB", h: "https://github.com/keiz7en/LimeSugar/releases/download/v0.1.1/LimeSugar-v0.1.1-windows.zip" },
             ].map((v, i) => (
               <a key={i} href={v.h} target="_blank" rel="noopener noreferrer"
                  className="text-xs px-3 py-1.5 glass rounded-full text-text-dim hover:text-gold transition-colors">
@@ -174,7 +188,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 max-w-4xl mx-auto">
             {[
               { icon: "🤖", name: "Android", status: "Ready", color: "text-green-400" },
-              { icon: "🪟", name: "Windows", status: "Soon", color: "text-text-dim" },
+              { icon: "🪟", name: "Windows", status: "Ready", color: "text-blue-400" },
               { icon: "🐧", name: "Linux", status: "Soon", color: "text-text-dim" },
               { icon: "🍎", name: "iOS", status: "Soon", color: "text-text-dim" },
               { icon: "💻", name: "macOS", status: "Soon", color: "text-text-dim" },
@@ -247,8 +261,8 @@ export default function Home() {
               <h4 className="font-bold mb-4">Platforms</h4>
               <ul className="space-y-2 text-sm text-text-dim">
                 <li>Android 5.0+</li>
-                <li>Windows / Linux — Soon</li>
-                <li>iOS / macOS / Web — Soon</li>
+                <li>Windows 10/11</li>
+                <li>Linux / iOS / macOS / Web — Soon</li>
               </ul>
             </div>
             <div>
