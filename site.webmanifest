@@ -1,0 +1,42 @@
+{
+  "name": "LimeSugar",
+  "short_name": "LimeSugar",
+  "description": "Premium Anime, Drama & Hollywood Streaming App",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090a0c",
+  "theme_color": "#d7a35a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["entertainment", "video"],
+  "screenshots": [
+    {
+      "src": "/screenshot1.jpg",
+      "sizes": "1080x1920",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Home - Anime"
+    },
+    {
+      "src": "/screenshot2.jpg",
+      "sizes": "1080x1920",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Player - Drama"
+    },
+    {
+      "src": "/screenshot3.jpg",
+      "sizes": "1080x1920",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Library - Hollywood"
+    }
+  ]
+}
