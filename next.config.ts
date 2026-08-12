@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/LimeSugar-Web",
+  basePath: process.env.GITHUB_PAGES === "true" ? "/LimeSugar-Web" : "",
 };
 
 export default nextConfig;
