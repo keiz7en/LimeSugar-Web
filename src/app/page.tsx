@@ -79,7 +79,7 @@ export default function Home() {
                { n: "arm64-v8a", s: "69 MB", h: "https://github.com/keiz7en/LimeSugar/releases/download/v0.1.3-beta/LimeSugar-v0.1.3-beta-universal.apk" },
                { n: "armeabi-v7a", s: "69 MB", h: "https://github.com/keiz7en/LimeSugar/releases/download/v0.1.3-beta/LimeSugar-v0.1.3-beta-universal.apk" },
                { n: "x86_64 · emulator", s: "69 MB", h: "https://github.com/keiz7en/LimeSugar/releases/download/v0.1.3-beta/LimeSugar-v0.1.3-beta-universal.apk" },
-               { n: "Windows", s: "32 MB", h: "https://github.com/keiz7en/LimeSugar/releases/download/v0.1.3-beta/LimeSugar-v0.1.3-beta-windows.zip" },
+               { n: "Windows", s: "25 MB", h: "https://github.com/keiz7en/LimeSugar/releases/download/v0.1.3-beta/LimeSugar-v0.1.3-beta-windows-setup.exe" },
              ].map((v, i) => (
               <a key={i} href={v.h} target="_blank" rel="noopener noreferrer"
                  className="text-xs px-3 py-1.5 glass rounded-full text-text-dim hover:text-gold transition-colors">
