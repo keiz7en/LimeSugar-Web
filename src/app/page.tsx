@@ -33,7 +33,7 @@ export default function Home() {
           {/* Download Buttons */}
           <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6 flex-wrap">
             <Link 
-              href="https://github.com/keiz7en/LimeSugar/releases/download/v0.2.4-beta/app-release.apk"
+              href="https://github.com/keiz7en/LimeSugar/releases/download/v0.2.4-build1/app-release.apk"
               className="btn-gold group flex items-center justify-center gap-3 px-8 py-4 min-w-[220px]"
               target="_blank"
               rel="noopener noreferrer"
@@ -46,7 +46,7 @@ export default function Home() {
             </Link>
             
             <Link 
-              href="https://github.com/keiz7en/LimeSugar/releases/tag/v0.2.4-beta"
+              href="https://github.com/keiz7en/LimeSugar/releases/tag/v0.2.4-build1"
               className="btn-outline group flex items-center justify-center gap-3 px-8 py-4 min-w-[220px]"
               target="_blank"
               rel="noopener noreferrer"
@@ -59,7 +59,7 @@ export default function Home() {
             </Link>
             
             <Link 
-              href="https://github.com/keiz7en/LimeSugar/releases/tag/v0.2.4-beta"
+              href="https://github.com/keiz7en/LimeSugar/releases/tag/v0.2.4-build1"
               className="btn-outline group flex items-center justify-center gap-3 px-8 py-4 min-w-[220px]"
               target="_blank"
               rel="noopener noreferrer"
@@ -75,11 +75,11 @@ export default function Home() {
           {/* APK variants */}
           <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
             {[
-               { n: "universal", s: "67.9 MB", h: "https://github.com/keiz7en/LimeSugar/releases/download/v0.2.4-beta/app-release.apk" },
-               { n: "arm64-v8a", s: "67.9 MB", h: "https://github.com/keiz7en/LimeSugar/releases/download/v0.2.4-beta/app-release.apk" },
-               { n: "armeabi-v7a", s: "67.9 MB", h: "https://github.com/keiz7en/LimeSugar/releases/download/v0.2.4-beta/app-release.apk" },
-               { n: "x86_64 · emulator", s: "67.9 MB", h: "https://github.com/keiz7en/LimeSugar/releases/download/v0.2.4-beta/app-release.apk" },
-               { n: "Windows", s: "33.8 MB", h: "https://github.com/keiz7en/LimeSugar/releases/tag/v0.2.4-beta" },
+               { n: "universal", s: "67.9 MB", h: "https://github.com/keiz7en/LimeSugar/releases/download/v0.2.4-build1/app-release.apk" },
+               { n: "arm64-v8a", s: "67.9 MB", h: "https://github.com/keiz7en/LimeSugar/releases/download/v0.2.4-build1/app-release.apk" },
+               { n: "armeabi-v7a", s: "67.9 MB", h: "https://github.com/keiz7en/LimeSugar/releases/download/v0.2.4-build1/app-release.apk" },
+               { n: "x86_64 · emulator", s: "67.9 MB", h: "https://github.com/keiz7en/LimeSugar/releases/download/v0.2.4-build1/app-release.apk" },
+               { n: "Windows", s: "33.8 MB", h: "https://github.com/keiz7en/LimeSugar/releases/tag/v0.2.4-build1" },
              ].map((v, i) => (
               <a key={i} href={v.h} target="_blank" rel="noopener noreferrer"
                  className="text-xs px-3 py-1.5 glass rounded-full text-text-dim hover:text-gold transition-colors">
@@ -91,7 +91,7 @@ export default function Home() {
           {/* Version badge */}
           <div className="mt-10 inline-flex items-center gap-3 px-4 py-2 glass rounded-lg">
             <span className="text-sm text-text-dim">Latest Release</span>
-               <span className="px-3 py-1 text-sm font-semibold gold-gradient-text">v0.2.4-beta</span>
+               <span className="px-3 py-1 text-sm font-semibold gold-gradient-text">v0.2.4-build1</span>
                 <span className="text-xs text-text-dim">Beta build · Aug 2026</span>
           </div>
         </div>
@@ -219,7 +219,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link 
-              href="https://github.com/keiz7en/LimeSugar/releases/download/v0.2.4-beta/app-release.apk"
+              href="https://github.com/keiz7en/LimeSugar/releases/download/v0.2.4-build1/app-release.apk"
               className="btn-gold px-10 py-4 text-lg"
               target="_blank"
               rel="noopener noreferrer"
